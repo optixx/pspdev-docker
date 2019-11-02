@@ -1,6 +1,7 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.10
 MAINTAINER Naomi Peori <naomi@peori.ca>
 
+ARG DEBIAN_FRONTEND=noninteractive
 ENV PSPDEV /usr/local/pspdev
 ENV PATH ${PATH}:${PSPDEV}/bin
 
